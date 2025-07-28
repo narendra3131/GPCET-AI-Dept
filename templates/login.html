@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <style>
+        h2{
+            text-align: center;
+            font-size: 15mm;
+            color: beige;
+        }
+        div{
+            text-align: center;
+            padding: 8px;
+            color: rgb(207, 195, 199);
+        }
+        body{
+            padding-top: 6%;
+            background-image: url("{{url_for("static",filename="/Image/loo.jpg")}}");
+            background-position: -90px;
+            position:absolute;
+            left:20px;
+            right:4px;
+            background-size:108%;
+            opacity:0.75:
+        }
+        label{
+            font-size: 20px;
+         }
+         input{
+            font-size: 19px;
+            border-radius: 11px;
+            width: 76mm;
+            height: 6mm;
+         }
+        form{
+            text-align:center;
+        }
+        .primary{
+            background-color: #26bd2b;
+            box-shadow: 0 5px #454343;
+            transform: translateY(4px);
+            font-size: 16px;  
+            padding: 12px 25px; 
+            cursor: pointer;
+            border-radius: 13px;
+            color: whitesmoke;
+        }
+
+    </style>
+<head>
+    <div>
+    <title>Login page</title>
+    <link rel="icon" type="loki.jpg" href="C:\Users\Student\Desktop\loki.jpg">
+    </div>
+</head>
+<body>
+    <div name="io">
+    <h2>Login </h2>
+        <!-- <img src="C:\Users\Student\Desktop\re.webp",alt="Dont look into this pic",width=400, height=500> -->
+    </div>
+    <center>
+    <div>
+        <form method="post" action="/login">
+            <!-- <label for="fname">Roll No</label><br> -->
+            <input type="text" placeholder="Roll No" name="rollno"><br><br>
+            <!-- <label for="fname">Password</label><br> -->
+            <input type="password" placeholder="Password" name="password"><br><br> 
+            <button type="submit" class="primary">Login</button>  
+        </form>
+           <br>
+        <span style="color: white; text:bold">{{er}}</span>
+        <h3 style="color: white">or</h3>
+        <a href="/" style="color: aliceblue;" action="."><h3>signup</h3></a>
+       
+    </div>
+</center>  
+</body>
+
+</html>

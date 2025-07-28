@@ -1,0 +1,159 @@
+<!DocType html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="icon" type="loki.jpg" href="{{url_for("static", filename="/Image/icon.jpg")}}">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+    <style>
+        meta{
+            width: 100%;
+            height: auto;
+          }
+        body{text-align:center;
+            background-image:url("{{url_for("static", filename="/Image/kk.jpg")}}");
+            background-size: 1990px;
+            opacity:0.88;
+            z-index:-1;
+            position: absolute;
+            background-attachment:fixed;
+        }table{
+            padding-top: 45px;
+            padding-bottom: 30px;
+            background-image:url("{{url_for("static",filename="/Image/kk.jpg")}}");
+            background-size: 50%;
+            opacity:0.85;
+            background-size: 1100px;
+            transform: translate(4px);
+            border-radius:12mm;
+            margin: 18px;
+            padding: 40px;
+        }
+        form{
+            text-align:center;
+            margin-top :30px;
+            margin-left:108mm;
+            margin-right:108mm;
+            padding-top:0.5mm;
+            padding-bottom:0mm;
+            color:white;
+         }
+         div{
+            padding-top: 18px;
+            color:white;
+            font-size:large;
+            margin-top: -1cm;
+            margin-right:22px;
+            margin-left:65px;
+         }
+         label{
+            font-size: 20px;
+         }
+    
+        input{
+           font-size: 19px;
+        }
+        .primary{
+            background-color: #26bd2b;
+            box-shadow: 5px black;
+            transform: translateY(4px);
+            font-size: 19px;  
+            padding: 13px 22px; 
+            cursor: pointer;
+            border-radius: 13px;
+            color:white;
+            margin-right:42px;
+        }
+        select{
+            font-size: large;
+            margin:auto;
+        }
+        textarea{
+            resize: none;
+        }
+        h1{  
+            margin-left:55px;
+            margin-right:77px;
+            color: white;
+            margin-top: 36px;
+            font-size: 40px;
+        /* }last{
+            font-size: 19px;  
+            padding: 13px 22px; 
+            cursor: pointer;
+            border-radius: 13px;
+        } */
+        
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Student Registration</h1>
+    </center>
+    
+    <div name="jk">
+    <form method="post" action="/">
+       <table align="center">
+        <th>
+        <tr>
+            <td><label for="name">NAME</label></td>   
+            <td><input type="text"  name="name" value=""/></td>
+        </tr>
+        <tr>
+            <td><label for="rollno">Roll No</label></td>
+            <td><input type="text" name="rollno" value=""/></td>
+        </tr>
+        <tr>
+            <td><label for="phone">Phone No</label></td>
+            <td><input type="phone" name="phone" value=""/></tr>
+        </tr> 
+        <tr>
+           <td><label for="gender">Gender<span style="color: red;">*</span></label></td>
+           <td><input type="radio" name="gender" value="male"/> Male
+            <input type="radio" name="gender" value="female"/>Female</td>
+        </tr>
+        <tr>
+             <td><label for="dob">DOB</label></td>
+             <td><input type="date"  name="dob" value=""/></td>
+          </tr>
+          <tr></tr>
+             <td><label for="email">Email</label></td>
+             <td><input type="text" name="email" value=""/></td>
+         </tr>
+         <tr>
+             <td><label for="course">Course</label></td>
+             <td><select name="course">
+                 <option value="">---select course---</option>
+                 <option value="CSE">CSE</option>
+                 <option value="ECE">ECE</option>
+                 <option value="AI">AI</option>
+                 <option value="MECH">MECH</option>
+                 <option value="EEE">EEE</option>
+                 <option value="CIVIL">CIVIL</option>
+                </select></td>
+          </tr>
+          <tr>
+            <tr></tr>
+            <td><label for="password">Password<span style="color: red;">*</span></label></td>
+            <td><input type="password" name="password" value=""/></td>
+        </tr>
+             <td><label for="about">About yourself</label></td>
+             <td><textarea name="about" rows="5" cols="32"></textarea></td>
+          </tr>
+        </th>
+       </table>
+      <!-- <a href="login.html" ><button type="button" class="primary" onclick=">submit</button></a> -->
+       <!-- <td center><input type="submit" name="submit" value="submit"/></td> -->
+       <input type="submit" class="primary">
+    </form>
+    <!-- <a href="login.html" ><button type="button" class="primary">submit</button></a> -->
+    <br>
+    <span style="color: white; border-color:white; display: none; ">{{result}}</span>
+    <span style="color: white; border-color:white; ">{{error}}</span>
+    </div>
+    <br>
+    <h3 style="color: white">or</h3>
+    
+    <a href="/login" name="last" style="color: aliceblue;"><h3>Login</h3></a>   
+</body>
+
+</html>
