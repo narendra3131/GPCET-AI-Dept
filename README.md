@@ -1,5 +1,6 @@
 # GPCET-AI-Dept
-This is GPCET AI department website in this website we can get all type of book and materails related to Artificial intelligence 
+This is GPCET AI department website in this website we can get all type of book and materials related to Artificial intelligence 
+
 result
 1. SIGNUP PAGE
 <img width="1911" height="1017" alt="image" src="https://github.com/user-attachments/assets/b1bb529b-db54-461a-9749-ac2866e4ef00" />
